@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "lint": "eslint --fix src/"
+    "lint": "eslint src/",
+    "server-start": "http-server dist"
   },
   "husky": {
     "hooks": {
@@ -20,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^0.12.3",
     "install": "^0.13.0",
     "npm": "^7.19.1",
     "prop-types": "^15.7.2",
